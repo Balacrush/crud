@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="dup">
+            <div class="container-heading">
+                <i class="fa fa-user"></i>
+            </div>
+        </div>
+            <form action="/display" method="post">
+                <div class="form-items">
+                <label for="username">user name
+                <input type="text" placeholder="enter user name" name="user_name" id="username" autocomplete="off">
+                </label>
+            </div>
+            <div class="form-items">
+                <label for="mailid">user mail
+                    <input type="email" placeholder="ex@gmail.com" name="user_mail" id="mailid" autocomplete="off">
+                    </label>
+                </div>
+                    <div class="form-items"><label for="pass">password
+                    <input type="password" placeholder="password" name="user_pass" id="pass" autocomplete="off">
+                    </label>
+                   </div>
+                   <div class="sub">
+                     <button type="submit" name="submit" > login</button>
+                   </div>
+           </form>
+        </div>
+    </div>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:#7158e2 ;
+        }
+        .container{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            width: 30rem;
+            height: 25rem;
+            border-radius: 15px;
+            background-color: white;
+        }
+        .container-heading{
+            position: absolute;
+            display: flex;
+            background-color: aqua;
+            border-radius: 100%;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 150px;
+            font-size: 60px;
+            background-color: #7d5fff;
+            color: white;
+            top: 130px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            left: 45%;
+        }
+        h3{
+            font-size: 2rem;
+        }
+        form{
+            height: 80%;
+            padding: 5px;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            margin-top: 95px;
+
+
+        }
+        .form-items{
+            display: flex;
+            height: 3rem;
+            margin: 3px;
+            justify-content: center;
+            align-items: center;
+        }
+        .dup{
+            height: 4%;
+        }
+        .form-items input{
+            height: 1.5rem;
+            border-radius: 6px;
+            padding: 1px;
+            text-align: center;
+            font-size: 15px;
+            outline: none;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.071);
+        }
+        .form-items label{
+            display: flex;
+            color: #7d5fff;
+
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            font-size: 17px;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-transform: uppercase;
+        }
+        .sub{
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.25rem;
+        }
+        .sub button{
+            height: 80%;
+            width: 50%;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #7d5fff;
+            color: white;
+        }
+
+    </style>
+    
+</body>
+</html>
